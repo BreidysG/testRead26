@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Comprensión Lectora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="titleInit">Test Número 26</Nav></h2>
+        <p id="paragraphInit">
+            Este test busca medir tu velocidad y comprensión
+            lectora.<br>
+            Te recomendamos que lo hagas en un ambiente
+            calmado, sin distracciones y con buena iluminación.<br>
+            Esta lectura la debes hacer basado en las técnicas
+            que ya hayas empezado a usar. En las primeras
+            semanas, no debes preocuparte mucho por la
+            comprensión lectora, ya que ese es un proceso que se
+            va a ir dando paulatinamente.<br>
+            Cuando des clic en INICIAR se te presentará la lectura
+            y el sistema llevará un cronómetro que medirá tu
+            velocidad. Al finalzar de leer todo el texto debes dar
+            clic en el botón TERMINAR.<br>
+        </p>
+        <button id="startButton">Iniciar</button>
+        <div id="textContainer" class="hidden">
+            <p id="textToRead">
+                Galeón
+                <br><br>
+                En la terraza de un bar de la playa están sentados un viejo y un niño. El mar acaba de purgarse con un temporal y ha dejado la arena cubierta de algas rojas muy amargas, pero las aguas ya se han calmado y el viejo le señala al niño un buque explorador fondeado en un punto del horizonte que está sacando del abismo un galeón de bucaneros que se hundió en tiempos muy remotos. Mira, le dice el viejo, aquel buque tiene un brazo articulado que ha bajado a mil metros de profundidad y ha introducido una cámara entre las cuadernas de la nave donde se ven cofres, vajillas, arcabuces y una sirena color de rosa esculpida en el bauprés. En un camarote aparece todavía la calavera del capitán coronada de lapas. El niño comienza a soñar con los ojos muy abiertos.
+                <br><br>
+                Todos nuestros juguetes se han roto, excepto los cuentos que nos contaron en la niñez y que de una forma u otra nos llevan siempre a la isla del tesoro. Gracias al sistema de detección por satélite existen no menos de 4000 barcos localizados en el fondo del mar -trirremes, carabelas, goletas, galeones- que naufragaron a lo largo de la historia. Lo que en el Mediterráneo eran dioses, en el Caribe y en los mares del Sur fueron piratas. Cada abismo contiene sus propios héroes sumergidos, como nuestra imaginación alberga los deseos más remotos. Existen empresas especializadas en sacar a la superficie estos barcos cargados de oro o de esculturas de mármol, lo mismo que la razón extrae las imágenes simbólicas que elabora el cerebro en la oscuridad de los sueños y las convierte en sensaciones a pleno sol.
+                <br><br>
+                El viejo le cuenta al niño un cuento de corsarios y en la imaginación del niño se sumerge la figura soñada de un barco fantasma gobernado por unos piratas berberiscos que llegaron a esta playa para raptar a cuantas mujeres hermosas encontraban. El viejo va aflorando desde el fondo de su memoria la historia de Simbad el Marino, la del Capitán Nemo, la de Lord Jim y otros cuentos, juguetes que le habían regalado en la infancia y nunca se le rompieron.
+                <br><br>
+                Ahora los saca a la superficie, los deposita en la imaginación del niño y estos relatos se hunden en su cerebro hasta alcanzar el fondo de los sueños. Cuando el viejo muera y su cuerpo descienda al abismo como una nave derrotada, un día, al recordar los cuentos que le había contado, el niño lo salvará de las aguas como ese buque explorador está rescatando ahora un galeón de bucaneros que lleva en su vientre cofres repletos de monedas de oro, una sirena labrada en el bauprés y otros tesoros.
+                <br><br>
+                Cuento breve, de Manuel Vicent - Recomendado por Miguel Diez R. - 454 palabras
+            </p>
+            
+            
+                         
+            <div id="timer">Tiempo transcurrido: <span id="timerValue">0</span> segundos</div>
+            <button id="finishButton">Terminar</button>
+        </div>
+        <div id="questionnaire" class="hidden">
+            <h2>Test de Comprensión Lectora</h2>
+            <form id="quizForm">
+                <ol id="questionList">
+                    <!-- Las preguntas se añadirán aquí dinámicamente con JavaScript -->
+                </ol>
+                <button type="submit">Terminar</button>
+            </form>
+        </div>
+        <div id="results" class="hidden">
+            <h2>Resultados</h2>
+            <div id="wordCount">Palabras leídas: <span id="wordCountValue"></span></div>
+            <div id="readingSpeed">Velocidad de lectura: <span id="readingSpeedValue"></span> palabras por minuto</div>
+            <div id="comprehension">Comprensión lectora: <span id="comprehensionValue"></span>%</div>
+            <div id="timeResult">Tiempo transcurrido: <span id="timeResultValue"></span> segundos</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
